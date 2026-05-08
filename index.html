@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sustainable Innovation Program | IIT Bhilai</title>
+  <meta name="description" content="A 4-week residential certification program in Foundations of Sustainable Innovation at IIT Bhilai. Building practical problem-solving and innovation foundations for Class 12 graduates." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span>IIT Bhilai</span>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logos">
+        <img src="/img/IIT_Bhilai_Logo.svg.png" alt="IIT Bhilai Logo" class="nav-logo iit-logo" />
+        <div class="nav-text-block">
+          <div class="nav-text-hindi">भारतीय प्रौद्योगिकी संस्थान भिलाई</div>
+          <div class="nav-text-english">Indian Institute of Technology Bhilai</div>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#objectives" class="nav-link">Curriculum</a></li>
+        <li><a href="#faculties" class="nav-link">Faculty</a></li>
+        <li><a href="#benefits" class="nav-link">Benefits</a></li>
+        <li><a href="#eligibility" class="nav-link">Eligibility</a></li>
+
+
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <!-- Left: Text Content -->
+    <div class="hero-left">
+      <div class="hero-badge" data-anim="fade-up">
+        <span class="badge-dot"></span>
+        Residential Certification Program · Class 12 Passouts
+      </div>
+      <h1 class="hero-title devanagari" data-anim="fade-up">
+        Foundations of<br />
+        <span class="hero-title-highlight">Sustainable Innovation</span>
+      </h1>
+      <p class="hero-sub-heading" data-anim="fade-up">Bridge to College Success 2026</p>
+      <p class="hero-org" data-anim="fade-up">Organised by <strong>IIT Bhilai</strong> · 18 May – 14 June</p>
+      <div class="hero-meta" data-anim="fade-up">
+      
+       
+       
+      </div>
+      <div class="hero-cta" data-anim="fade-up">
+        <a href="https://www.iitbhilai.ac.in" class="btn btn-hero-primary">Apply by 12 May</a>
+        <a href="#about" class="btn btn-hero-outline">Program Overview
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Video -->
+    <div class="hero-right">
+      <div class="hero-right-inner">
+        <!-- <div class="video-frame-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wwTpxvw_GSE?si=j9Ergxs00cZs8jPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sanskrit Shloka 1 -->
+  <section class="shloka-section">
+    <div class="shloka-container">
+      <div class="shloka-card" data-anim="fade-up">
+        <p class="shloka-text">आचार्यात् पादमादत्ते पादं शिष्यः स्वमेधया।<br />पादं सब्रह्मचारिभ्यः पादं कालक्रमेण च॥</p>
+        <p class="shloka-meaning">A student acquires one-quarter of knowledge from the teacher; one-quarter from his own intelligence; one-quarter from his peers (classmates); and the final quarter only in the course of time (through experience)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header" data-anim="fade-up">
+        <span class="section-label">About the Programme</span>
+        <h2 class="section-title">Bridging School and<br /><span class="gradient-text">Future Innovation</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card" data-anim="fade-up">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Bridge to College</h3>
+          <p>Designed for Class 12 passouts to build a strong foundation in logic, programming, and innovation before college.</p>
+        </div>
+        <div class="about-card" data-anim="fade-up">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>4-Week Residential</h3>
+          <p>An immersive 4-week offline program at IIT Bhilai campus, including hostel stay, nutritious meals, and peer collaboration.</p>
+        </div>
+        <div class="about-card" data-anim="fade-up">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18z"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3>Learn from Nature</h3>
+          <p>Hands-on experimentation with organic farming, water harvesting, and renewable energy in our dedicated Nature Lab.</p>
+        </div>
+        <div class="about-card" data-anim="fade-up">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Interdisciplinary</h3>
+          <p>Explore the intersection of Python programming, mechatronics, and communication skills for a holistic edge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objectives Section -->
+  <section class="objectives-section" id="objectives">
+    <div class="container">
+      <div class="objectives-inner">
+        <div class="objectives-left" data-anim="fade-right">
+          <span class="section-label">Core Curriculum</span>
+          <h2 class="section-title">Developing the<br /><span class="gradient-text">Innovation Mindset</span></h2>
+          <p class="objectives-desc">This program equips students with the technical skills and purpose-driven thinking needed to solve the challenges of the 21st century.</p>
+        </div>
+        <div class="objectives-right">
+          <div class="objective-item" data-anim="fade-left">
+            <div class="obj-number">01</div>
+            <div class="obj-content">
+              <h4>Computational Thinking</h4>
+              <p>Master flowcharts, visual logic, and Python programming to build robust data collection and analysis systems.</p>
+            </div>
+          </div>
+          <div class="objective-item" data-anim="fade-left">
+            <div class="obj-number">02</div>
+            <div class="obj-content">
+              <h4>Sustainability awareness</h4>
+              <p>Hands-on exposure to organic farming, water harvesting, composting, and renewable energy implementation.</p>
+            </div>
+          </div>
+          <div class="objective-item" data-anim="fade-left">
+            <div class="obj-number">03</div>
+            <div class="obj-content">
+              <h4>Engineering Intuition</h4>
+              <p>Explore mechatronics, robotics, and basic electronics through practical interaction with modern machine tools.</p>
+            </div>
+          </div>
+          <div class="objective-item" data-anim="fade-left">
+            <div class="obj-number">04</div>
+            <div class="obj-content">
+              <h4>Mindfulness & Soft Skills</h4>
+              <p>Enhance communication, presentation, and emotional awareness through dedicated sessions on mindfulness.</p>
+            </div>
+          </div>
+          <div class="objective-item" data-anim="fade-left">
+            <div class="obj-number">05</div>
+            <div class="obj-content">
+              <h4>Real-World Problem Solving</h4>
+              <p>Bridge the gap between school and college by working on practical societal and environmental challenges.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty Section -->
+  <section class="faculty-section" id="faculties">
+    <div class="container">
+      <div class="section-header" data-anim="fade-up">
+        <span class="section-label">Our Mentors</span>
+        <h2 class="section-title">Led By Experienced<br /><span class="gradient-text">IIT Bhilai Faculty</span></h2>
+      </div>
+      <div class="faculty-grid">
+        <!-- Faculty 1 -->
+        <div class="faculty-card" data-anim="fade-up">
+          <div class="faculty-img-wrapper">
+             <img src="img/Dr Ashish.png" alt="Dr. Ashish Kumar Sahu" class="faculty-img" />
+          </div>
+          <div class="faculty-info">
+            <h4>Dr. Ashish Kumar Sahu</h4>
+            <p class="faculty-role">Asst. Professor, Mechatronics</p>
+            <p class="faculty-bio"><strong>Research:</strong> Laser-Based Manufacturing, Micromachining & Additive Manufacturing Technologies.</p>
+          </div>
+        </div>
+        <!-- Faculty 2 -->
+        <div class="faculty-card" data-anim="fade-up">
+          <div class="faculty-img-wrapper">
+             <img src="img/Dr Saikat.png" alt="Dr. Saikat Sahoo" class="faculty-img" />
+          </div>
+          <div class="faculty-info">
+            <h4>Dr. Saikat Sahoo</h4>
+            <p class="faculty-role">Asst. Professor, Mechatronics</p>
+            <p class="faculty-bio"><strong>Research:</strong> Healthcare Robotics, Exoskeletons, Rehabilitation & Medical Instrumentation.</p>
+          </div>
+        </div>
+        <!-- Faculty 3 -->
+        <div class="faculty-card" data-anim="fade-up">
+          <div class="faculty-img-wrapper">
+             <img src="img/Dr Gagan.png" alt="Dr. Gagan Raj Gupta" class="faculty-img" />
+          </div>
+          <div class="faculty-info">
+            <h4>Dr. Gagan Raj Gupta</h4>
+            <p class="faculty-role">Assoc. Professor, CSE</p>
+            <p class="faculty-bio"><strong>Research:</strong> Sustainability, Healthcare, Industrial Safety & NEP-Aligned Education Technologies.</p>
+          </div>
+        </div>
+        <!-- Faculty 4 -->
+        <div class="faculty-card" data-anim="fade-up">
+          <div class="faculty-img-wrapper">
+             <img src="img/Dr Lalit.png" alt="Dr. Lalit Kumar Sahu" class="faculty-img" />
+          </div>
+          <div class="faculty-info">
+            <h4>Dr. Lalit Kumar Sahu</h4>
+            <p class="faculty-role">Asst. Professor, Electrical</p>
+            <p class="faculty-bio"><strong>Research:</strong> Power Electronics, Solar PV Systems & EV Technologies.</p>
+          </div>
+        </div>
+        <!-- Faculty 5 -->
+        <div class="faculty-card" data-anim="fade-up">
+          <div class="faculty-img-wrapper">
+             <img src="img/Dr Ashish Kumar Tripathi.png" alt="Dr. Ashish Kumar Tripathi" class="faculty-img" />
+          </div>
+          <div class="faculty-info">
+            <h4>Dr. Ashish Kumar Tripathi</h4>
+            <p class="faculty-role">Asst. Professor, Bioscience</p>
+            <p class="faculty-bio"><strong>Research:</strong> Osteoimmunology, Energy Metabolism & Metabolic Disorders in Skeletal Health.</p>
+          </div>
+        </div>
+        <!-- Faculty 6 -->
+        <div class="faculty-card" data-anim="fade-up">
+          <div class="faculty-img-wrapper">
+             <img src="img/Dr yogesh pratap singh.png" alt="Dr. Yogesh Pratap Singh" class="faculty-img" />
+          </div>
+          <div class="faculty-info">
+            <h4>Dr. Yogesh Pratap Singh</h4>
+            <p class="faculty-role">Asst. Professor, Mechatronics</p>
+            <p class="faculty-bio"><strong>Research:</strong> Robotics, Multi-Body Dynamics, Mechanism Design & Control Systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Students Will Receive Section -->
+  <section class="benefits-section" id="benefits">
+    <div class="container">
+      <div class="section-header" data-anim="fade-up">
+        <span class="section-label">Student Benefits</span>
+        <h2 class="section-title">What You'll<br /><span class="gradient-text">Gain & Receive</span></h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-item" data-anim="fade-up">
+          <div class="benefit-icon">📜</div>
+          <h4>IIT Bhilai Certification</h4>
+          <p>Official certificate of completion from IIT Bhilai, recognizing your foundations in sustainable innovation.</p>
+        </div>
+        <div class="benefit-item" data-anim="fade-up">
+          <div class="benefit-icon">🏠</div>
+          <h4>Residential Experience</h4>
+          <p>Immersive 4-week campus life with safe hostel accommodation and nutritious vegetarian meals provided.</p>
+        </div>
+        <div class="benefit-item" data-anim="fade-up">
+          <div class="benefit-icon">🧠</div>
+          <h4>Practical Skills</h4>
+          <p>Master technical foundations in Python, Mechatronics, and Nature-based sustainable systems through labs.</p>
+        </div>
+        <div class="benefit-item" data-anim="fade-up">
+          <div class="benefit-icon">🤝</div>
+          <h4>Expert Mentorship</h4>
+          <p>Personalized guidance and mentorship from distinguished IIT Bhilai faculty throughout the journey.</p>
+        </div>
+        <div class="benefit-item" data-anim="fade-up">
+          <div class="benefit-icon">🌟</div>
+          <h4>Peer Networking</h4>
+          <p>Collaborate and learn alongside a diverse, motivated community of students from different backgrounds.</p>
+        </div>
+        <div class="benefit-item" data-anim="fade-up">
+          <div class="benefit-icon">🗺️</div>
+          <h4>Career Roadmap</h4>
+          <p>Dedicated sessions on higher education guidance and career mapping to help you choose the right path.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eligibility Section -->
+  <section class="eligibility-section" id="eligibility">
+    <div class="container">
+      <div class="eligibility-inner">
+        <div class="eligibility-left" data-anim="fade-right">
+          <span class="section-label">Eligibility Criteria</span>
+          <h2 class="section-title">Is This Program<br /><span class="gradient-text">Right For You?</span></h2>
+          <p class="section-desc">We are looking for motivated students who want to build a sustainable future and bridge the gap between school and college.</p>
+        </div>
+        <div class="eligibility-right" data-anim="fade-left">
+          <ul class="eligibility-list">
+            <li>
+              <div class="list-icon">✓</div>
+              <div class="list-text"><strong>Batch of 2026:</strong> Students who have successfully passed their Class 12 board examinations in 2026.</div>
+            </li>
+            <li>
+              <div class="list-icon">✓</div>
+              <div class="list-text"><strong>CG Board Only:</strong> This certification and scholarship program is exclusively for Chhattisgarh (CG) Board students.</div>
+            </li>
+            <li>
+              <div class="list-icon">✓</div>
+              <div class="list-text"><strong>Academic Merit:</strong> A minimum of 65% marks in the board examinations is mandatory for eligibility.</div>
+            </li>
+            <li>
+              <div class="list-icon">✓</div>
+              <div class="list-text"><strong>Income Limit:</strong> Scholarship for  students with an annual family income below ₹2.5 lakh.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sanskrit Shloka 2 -->
+  <section class="shloka-section shloka-alt">
+    <div class="shloka-container">
+      <div class="shloka-card" data-anim="fade-up">
+        <p class="shloka-text">सा विद्या या विमुक्तये।</p>
+        <p class="shloka-meaning">That is knowledge which liberates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sanskrit Shloka 3 -->
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <p class="footer-title">Sustainable Innovation Program</p>
+      <p class="footer-sub">Organised by Indian Institute of Technology Bhilai</p>
+      <p class="footer-contact">For queries: <a href="mailto:niketjaiswal@iitbhilai.ac.in">niketjaiswal@iitbhilai.ac.in</a></p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">© 2026 IIT Bhilai. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
