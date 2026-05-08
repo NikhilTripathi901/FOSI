@@ -323,12 +323,22 @@ a  { text-decoration: none; color: inherit; }
 }
 
 .hero-org {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+.hero-org strong { color: var(--brand); font-weight: 700; }
+.hero-meta-info {
+  font-size: 0.95rem;
   color: var(--text-muted);
   margin-bottom: 32px;
+  background: var(--green-50);
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 100px;
+  border: 1px solid var(--green-200);
 }
-.hero-org strong { color: var(--text-dark); font-weight: 700; }
 .devanagari {
   font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
 }
@@ -973,6 +983,16 @@ a  { text-decoration: none; color: inherit; }
 .footer-sub {
   font-size: 0.95rem;
   color: rgba(255,255,255,0.7);
+  margin-bottom: 12px;
+}
+.footer-scholarship {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--white);
+  background: rgba(255,255,255,0.1);
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 100px;
   margin-bottom: 24px;
 }
 .footer-tagline {
