@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>सतत नवाचार कार्यक्रम | आईआईटी भिलाई</title>
+  <meta name="description" content="आईआईटी भिलाई में सतत नवाचार के मूल सिद्धांतों पर 4-सप्ताह का आवासीय प्रमाणन कार्यक्रम। 12वीं पास छात्रों के लिए व्यावहारिक समस्या-समाधान और नवाचार की नींव तैयार करना।" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span>IIT Bhilai</span>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logos">
+        <img src="/img/IIT_Bhilai_Logo.svg.png" alt="IIT Bhilai Logo" class="nav-logo iit-logo" />
+        <div class="nav-text-block">
+          <div class="nav-text-hindi">भारतीय प्रौद्योगिकी संस्थान भिलाई</div>
+          <div class="nav-text-english">Indian Institute of Technology Bhilai</div>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">परिचय</a></li>
+        <li><a href="#objectives" class="nav-link">पाठ्यक्रम</a></li>
+        <li><a href="#faculties" class="nav-link">शिक्षक</a></li>
+        <li><a href="#eligibility" class="nav-link">योग्यता</a></li>
+        <li><a href="#admission" class="nav-link">प्रवेश</a></li>
+        <li><a href="#venues" class="nav-link">स्थान</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-nav-lang">English</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7ayyt9s4rW1KQ5SF3MzCWF8OxuhP4bK9rBrJ7rb_w0XmzFQ/viewform" class="btn btn-nav-apply">अभी आवेदन करें</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <!-- Left: Text Content -->
+    <div class="hero-left">
+      <div class="hero-badge" data-anim="fade-up">
+        <span class="badge-dot"></span>
+        मेकाट्रॉनिक्स विभाग द्वारा आवासीय प्रमाणन कार्यक्रम
+      </div>
+      <h1 class="hero-title devanagari" data-anim="fade-up">
+        सतत नवाचार के<br />
+        <span class="hero-title-highlight">मूल सिद्धांत</span>
+      </h1>
+      <p class="hero-sub-heading" data-anim="fade-up">कॉलेज की सफलता की ओर कदम 2026</p>
+      <p class="hero-org" data-anim="fade-up">आयोजक: <strong>मेकाट्रॉनिक्स विभाग, आईआईटी भिलाई</strong></p>
+      <p class="hero-meta-info" data-anim="fade-up">18 मई – 14 जून</p>
+      <div class="hero-meta" data-anim="fade-up">
+      
+       
+       
+      </div>
+      <div class="hero-cta" data-anim="fade-up">
+        <a href="https://www.iitbhilai.ac.in" class="btn btn-hero-primary">12 मई तक आवेदन करें</a>
+        <a href="#about" class="btn btn-hero-outline">कार्यक्रम की रूपरेखा
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Video -->
+    <div class="hero-right">
+      <div class="hero-right-inner">
+        <!-- <div class="video-frame-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wwTpxvw_GSE?si=j9Ergxs00cZs8jPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sanskrit Shloka 1 -->
+  <section class="shloka-section">
+    <div class="shloka-container">
+      <div class="shloka-card" data-anim="fade-up">
+        <p class="shloka-text">आचार्यात् पादमादत्ते पादं शिष्यः स्वमेधया।<br />पादं सब्रह्मचारिभ्यः पादं कालक्रमेण च॥</p>
+        <p class="shloka-meaning">एक छात्र अपना एक चौथाई ज्ञान शिक्षक से, एक चौथाई अपनी बुद्धि से, एक चौथाई अपने सहपाठियों से, और शेष एक चौथाई समय के साथ (अनुभव से) प्राप्त करता है।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header" data-anim="fade-up">
+        <span class="section-label">कार्यक्रम के बारे में</span>
+        <h2 class="section-title">स्कूली शिक्षा और<br /><span class="gradient-text">भविष्य के नवाचार को जोड़ना</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card" data-anim="fade-up">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>कॉलेज की ओर कदम</h3>
+          <p>12वीं पास छात्रों के लिए कॉलेज जाने से पहले लॉजिक, प्रोग्रामिंग और नवाचार में मजबूत नींव बनाने के लिए डिज़ाइन किया गया।</p>
+        </div>
+        <div class="about-card" data-anim="fade-up">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>4-सप्ताह का आवासीय कार्यक्रम</h3>
+          <p>आईआईटी भिलाई कैंपस में 4 सप्ताह का गहन ऑफलाइन कार्यक्रम, जिसमें हॉस्टल, पौष्टिक भोजन और सहपाठियों के साथ सीखना शामिल है।</p>
+        </div>
+        <div class="about-card" data-anim="fade-up">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18z"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3>प्रकृति से सीखें</h3>
+          <p>हमारी विशेष नेचर लैब में जैविक खेती, जल संचयन और नवीकरणीय ऊर्जा के साथ व्यावहारिक प्रयोग।</p>
+        </div>
+        <div class="about-card" data-anim="fade-up">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>बहु-विषयक</h3>
+          <p>सर्वांगीण विकास के लिए पायथन प्रोग्रामिंग, मेकाट्रॉनिक्स और संचार कौशल का मेल।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objectives Section -->
+  <section class="objectives-section" id="objectives">
+    <div class="container">
+      <div class="objectives-inner">
+        <div class="objectives-left" data-anim="fade-right">
+          <span class="section-label">मुख्य पाठ्यक्रम</span>
+          <h2 class="section-title">नवाचार की<br /><span class="gradient-text">सोच विकसित करना</span></h2>
+          <p class="objectives-desc">यह कार्यक्रम छात्रों को 21वीं सदी की चुनौतियों को हल करने के लिए आवश्यक तकनीकी कौशल और उद्देश्यपूर्ण सोच से लैस करता है।</p>
+        </div>
+        <div class="objectives-right">
+          <div class="objective-item" data-anim="fade-left">
+            <div class="obj-number">01</div>
+            <div class="obj-content">
+              <h4>कंप्यूटेशनल थिंकिंग</h4>
+              <p>मजबूत डेटा संग्रह और विश्लेषण प्रणाली बनाने के लिए फ्लोचार्ट, विजुअल लॉजिक और पायथन प्रोग्रामिंग सीखें।</p>
+            </div>
+          </div>
+          <div class="objective-item" data-anim="fade-left">
+            <div class="obj-number">02</div>
+            <div class="obj-content">
+              <h4>स्थिरता जागरूकता</h4>
+              <p>जैविक खेती, जल संचयन, खाद बनाने और नवीकरणीय ऊर्जा के उपयोग का व्यावहारिक ज्ञान।</p>
+            </div>
+          </div>
+          <div class="objective-item" data-anim="fade-left">
+            <div class="obj-number">03</div>
+            <div class="obj-content">
+              <h4>इंजीनियरिंग की समझ</h4>
+              <p>आधुनिक मशीनों के व्यावहारिक उपयोग के माध्यम से मेकाट्रॉनिक्स, रोबोटिक्स और बेसिक इलेक्ट्रॉनिक्स को जानें।</p>
+            </div>
+          </div>
+          <div class="objective-item" data-anim="fade-left">
+            <div class="obj-number">04</div>
+            <div class="obj-content">
+              <h4>सॉफ्ट स्किल्स और माइंडफुलनेस</h4>
+              <p>माइंडफुलनेस पर विशेष सत्रों के माध्यम से संचार, प्रस्तुति कौशल और भावनात्मक जागरूकता को बढ़ाएं।</p>
+            </div>
+          </div>
+          <div class="objective-item" data-anim="fade-left">
+            <div class="obj-number">05</div>
+            <div class="obj-content">
+              <h4>व्यावहारिक समस्याओं का समाधान</h4>
+              <p>समाज और पर्यावरण की असली चुनौतियों पर काम करके स्कूल और कॉलेज के बीच की दूरी को मिटाएं।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty Section -->
+  <section class="faculty-section" id="faculties">
+    <div class="container">
+      <div class="section-header" data-anim="fade-up">
+        <span class="section-label">हमारे मार्गदर्शक</span>
+        <h2 class="section-title">आईआईटी भिलाई के अनुभवी<br /><span class="gradient-text">शिक्षकों का मार्गदर्शन</span></h2>
+      </div>
+      <div class="faculty-grid">
+        <!-- Faculty 1 -->
+        <div class="faculty-card" data-anim="fade-up">
+          <div class="faculty-img-wrapper">
+             <img src="img/Dr Ashish.png" alt="Dr. Ashish Kumar Sahu" class="faculty-img" />
+          </div>
+          <div class="faculty-info">
+            <h4>Dr. Ashish Kumar Sahu</h4>
+            <p class="faculty-role">सहायक प्रोफेसर, मेकाट्रॉनिक्स</p>
+            <p class="faculty-bio"><strong>शोध:</strong> लेजर-आधारित विनिर्माण, माइक्रोमशीनिंग और एडिटिव मैन्युफैक्चरिंग।</p>
+          </div>
+        </div>
+        <!-- Faculty 2 -->
+        <div class="faculty-card" data-anim="fade-up">
+          <div class="faculty-img-wrapper">
+             <img src="img/Dr Saikat.png" alt="Dr. Saikat Sahoo" class="faculty-img" />
+          </div>
+          <div class="faculty-info">
+            <h4>Dr. Saikat Sahoo</h4>
+            <p class="faculty-role">सहायक प्रोफेसर, मेकाट्रॉनिक्स</p>
+            <p class="faculty-bio"><strong>शोध:</strong> हेल्थकेयर रोबोटिक्स, एक्सोस्केलेटन, पुनर्वास और चिकित्सा उपकरण।</p>
+          </div>
+        </div>
+        <!-- Faculty 3 -->
+        <div class="faculty-card" data-anim="fade-up">
+          <div class="faculty-img-wrapper">
+             <img src="img/Dr Gagan.png" alt="Dr. Gagan Raj Gupta" class="faculty-img" />
+          </div>
+          <div class="faculty-info">
+            <h4>Dr. Gagan Raj Gupta</h4>
+            <p class="faculty-role">सह-प्राध्यापक, कंप्यूटर साइंस</p>
+            <p class="faculty-bio"><strong>शोध:</strong> स्थिरता, स्वास्थ्य देखभाल, औद्योगिक सुरक्षा और एनईपी-संरेखित शिक्षा तकनीक।</p>
+          </div>
+        </div>
+        <!-- Faculty 4 -->
+        <div class="faculty-card" data-anim="fade-up">
+          <div class="faculty-img-wrapper">
+             <img src="img/Dr Lalit.png" alt="Dr. Lalit Kumar Sahu" class="faculty-img" />
+          </div>
+          <div class="faculty-info">
+            <h4>Dr. Lalit Kumar Sahu</h4>
+            <p class="faculty-role">सहायक प्रोफेसर, इलेक्ट्रिकल</p>
+            <p class="faculty-bio"><strong>शोध:</strong> पावर इलेक्ट्रॉनिक्स, सोलर पीवी सिस्टम और ईवी तकनीक।</p>
+          </div>
+        </div>
+        <!-- Faculty 5 -->
+        <div class="faculty-card" data-anim="fade-up">
+          <div class="faculty-img-wrapper">
+             <img src="img/Dr Ashish Kumar Tripathi.png" alt="Dr. Ashish Kumar Tripathi" class="faculty-img" />
+          </div>
+          <div class="faculty-info">
+            <h4>Dr. Ashish Kumar Tripathi</h4>
+            <p class="faculty-role">सहायक प्रोफेसर, बायोसाइंस</p>
+            <p class="faculty-bio"><strong>शोध:</strong> ऑस्टियोइम्यूनोलॉजी, ऊर्जा चयापचय और कंकाल स्वास्थ्य।</p>
+          </div>
+        </div>
+        <!-- Faculty 6 -->
+        <div class="faculty-card" data-anim="fade-up">
+          <div class="faculty-img-wrapper">
+             <img src="img/Dr yogesh pratap singh.png" alt="Dr. Yogesh Pratap Singh" class="faculty-img" />
+          </div>
+          <div class="faculty-info">
+            <h4>Dr. Yogesh Pratap Singh</h4>
+            <p class="faculty-role">सहायक प्रोफेसर, मेकाट्रॉनिक्स</p>
+            <p class="faculty-bio"><strong>शोध:</strong> रोबोटिक्स, मल्टी-बॉडी डायनामिक्स, मैकेनिज्म डिजाइन और कंट्रोल सिस्टम।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Students Will Receive Section -->
+  <section class="benefits-section" id="benefits">
+    <div class="container">
+      <div class="section-header" data-anim="fade-up">
+        <span class="section-label">छात्रों को लाभ</span>
+        <h2 class="section-title">आपको क्या<br /><span class="gradient-text">सीखने और प्राप्त करने को मिलेगा</span></h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-item" data-anim="fade-up">
+          <div class="benefit-icon">📜</div>
+          <h4>आईआईटी भिलाई का प्रमाण पत्र</h4>
+          <p>सतत नवाचार में आपकी नींव को मान्यता देते हुए, आईआईटी भिलाई से कार्यक्रम पूरा करने का आधिकारिक प्रमाण पत्र।</p>
+        </div>
+        <div class="benefit-item" data-anim="fade-up">
+          <div class="benefit-icon">🎓</div>
+          <h4>70% तक स्कॉलरशिप</h4>
+          <p>योग्य और मेधावी उम्मीदवारों के लिए कॉर्पोरेट सीएसआर फंड के माध्यम से स्कॉलरशिप दी जाएगी।</p>
+        </div>
+        <div class="benefit-item" data-anim="fade-up">
+          <div class="benefit-icon">🧠</div>
+          <h4>व्यावहारिक कौशल</h4>
+          <p>प्रयोगशालाओं के माध्यम से पायथन, मेकाट्रॉनिक्स और प्रकृति-आधारित सतत प्रणालियों में तकनीकी नींव मजबूत करें।</p>
+        </div>
+        <div class="benefit-item" data-anim="fade-up">
+          <div class="benefit-icon">🤝</div>
+          <h4>विशेषज्ञों का मार्गदर्शन</h4>
+          <p>पूरे कार्यक्रम के दौरान आईआईटी भिलाई के प्रतिष्ठित शिक्षकों से व्यक्तिगत मार्गदर्शन प्राप्त करें।</p>
+        </div>
+        <div class="benefit-item" data-anim="fade-up">
+          <div class="benefit-icon">🌟</div>
+          <h4>सहपाठियों के साथ नेटवर्किंग</h4>
+          <p>विभिन्न पृष्ठभूमि से आए हुए प्रेरित छात्रों के एक विविध समुदाय के साथ सहयोग करें और सीखें।</p>
+        </div>
+        <div class="benefit-item" data-anim="fade-up">
+          <div class="benefit-icon">🗺️</div>
+          <h4>करियर मार्गदर्शन</h4>
+          <p>उच्च शिक्षा और सही करियर पथ चुनने में मदद के लिए समर्पित मार्गदर्शन सत्र।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eligibility Section -->
+  <section class="eligibility-section" id="eligibility">
+    <div class="container">
+      <div class="eligibility-inner">
+        <div class="eligibility-left" data-anim="fade-right">
+          <span class="section-label">पात्रता मानदंड</span>
+          <h2 class="section-title">क्या यह कार्यक्रम<br /><span class="gradient-text">आपके लिए सही है?</span></h2>
+          <p class="section-desc">हम ऐसे प्रेरित छात्रों की तलाश कर रहे हैं जो एक स्थायी भविष्य बनाना चाहते हैं और स्कूल व कॉलेज के बीच की दूरी को पाटना चाहते हैं।</p>
+        </div>
+        <div class="eligibility-right" data-anim="fade-left">
+          <ul class="eligibility-list">
+            <li>
+              <div class="list-icon">✓</div>
+              <div class="list-text"><strong>2026 बैच:</strong> ऐसे छात्र जिन्होंने 2026 में 12वीं की बोर्ड परीक्षा सफलतापूर्वक पास कर ली है।</div>
+            </li>
+            <li>
+              <div class="list-icon">✓</div>
+              <div class="list-text"><strong>सभी बोर्ड के लिए:</strong> यह कार्यक्रम सभी बोर्ड (CBSE, ICSE, CG Board आदि) के 12वीं पास छात्रों के लिए खुला है।</div>
+            </li>
+            <li>
+              <div class="list-icon">✓</div>
+              <div class="list-text"><strong>स्कॉलरशिप:</strong> विशेष स्कॉलरशिप (CSR फंड द्वारा) केवल छत्तीसगढ़ (CG) बोर्ड के छात्रों के लिए उपलब्ध है।</div>
+            </li>
+            <li>
+              <div class="list-icon">✓</div>
+              <div class="list-text"><strong>न्यूनतम अंक:</strong> प्रवेश के लिए बोर्ड परीक्षाओं में कम से कम 65% अंक होना अनिवार्य है।</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Admission Process Section -->
+  <section class="admission-section" id="admission">
+    <div class="container">
+      <div class="section-header" data-anim="fade-up">
+        <span class="section-label">प्रवेश प्रक्रिया</span>
+        <h2 class="section-title">आवेदन <span class="gradient-text">कैसे करें</span></h2>
+        <p class="section-desc">सतत नवाचार कार्यक्रम में अपनी जगह पक्की करने के लिए इन सरल चरणों का पालन करें।</p>
+      </div>
+
+      <div class="admission-steps">
+        <div class="step-card" data-anim="fade-up">
+          <div class="step-number">01</div>
+          <h4>ऑनलाइन आवेदन</h4>
+          <p>आधिकारिक आवेदन पत्र में अपना व्यक्तिगत विवरण और 12वीं बोर्ड का परिणाम भरें।</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7ayyt9s4rW1KQ5SF3MzCWF8OxuhP4bK9rBrJ7rb_w0XmzFQ/viewform" target="_blank" class="step-link">फॉर्म खोलें →</a>
+        </div>
+        <div class="step-card" data-anim="fade-up">
+          <div class="step-number">02</div>
+          <h4>दस्तावेजों की जांच</h4>
+          <p>पात्रता की जांच के लिए अपनी 12वीं की मार्कशीट और बोर्ड सर्टिफिकेट की स्कैन की गई प्रतियां अपलोड करें।</p>
+        </div>
+        <div class="step-card highlight-step" data-anim="fade-up">
+          <div class="step-number">03</div>
+          <h4>स्कॉलरशिप का आवेदन</h4>
+          <p>सीजी बोर्ड के छात्र परिवार का आय प्रमाण पत्र प्रदान करके सीएसआर स्कॉलरशिप के लिए आवेदन कर सकते हैं।</p>
+          <div class="affidavit-note">
+            <strong>नोट:</strong> यदि आपके पास अभी आय प्रमाण पत्र नहीं है, तो आप एक <strong>शपथ पत्र (Affidavit)</strong> दे सकते हैं कि आप जल्द ही प्रमाण पत्र जमा करेंगे।
+          </div>
+        </div>
+        <div class="step-card" data-anim="fade-up">
+          <div class="step-number">04</div>
+          <h4>अंतिम चयन</h4>
+          <p>चुने गए उम्मीदवारों को उनके आवासीय प्रवास के लिए आगे के निर्देशों के साथ एक पुष्टिकरण ईमेल प्राप्त होगा।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Venue Gallery Section -->
+  <section class="venues-section" id="venues">
+    <div class="container">
+      <div class="section-header" data-anim="fade-up">
+        <span class="section-label">परिसर (कैंपस) के स्थान</span>
+        <h2 class="section-title">परिसर की<br /><span class="gradient-text">एक झलक</span></h2>
+        <p class="section-desc">आईआईटी भिलाई की अत्याधुनिक सुविधाओं और आवासीय स्थानों पर एक नज़र डालें।</p>
+      </div>
+
+      <div class="venue-categories">
+        <!-- Lecture Hall 106 -->
+        <div class="venue-cat" data-anim="fade-up">
+          <h3 class="cat-title">लेक्चर हॉल 106</h3>
+          <div class="venue-grid">
+            <div class="venue-item"><img src="img/L106_1.jpg" alt="Lecture Hall 106 Interior" /></div>
+            <div class="venue-item"><img src="img/L106_2.jpg" alt="Lecture Hall 106 Session" /></div>
+            <div class="venue-item"><img src="img/L106_gate.jpg" alt="Lecture Hall 106 Entrance" /></div>
+          </div>
+        </div>
+
+
+
+        <!-- Boys Hostels -->
+        <div class="venue-cat" data-anim="fade-up">
+          <h3 class="cat-title">लड़कों का हॉस्टल</h3>
+          <div class="venue-grid">
+            <div class="venue-item"><img src="img/Gopad Boys Hostel.jpg" alt="Gopad Boys Hostel" /><div class="img-label">गोपद बॉयज हॉस्टल</div></div>
+            <div class="venue-item"><img src="img/Kanhar Boys Hostel .jpg" alt="Kanhar Boys Hostel" /><div class="img-label">कन्हार बॉयज हॉस्टल</div></div>
+          </div>
+        </div>
+
+        <!-- Girls Hostel -->
+        <div class="venue-cat" data-anim="fade-up">
+          <h3 class="cat-title">लड़कियों का हॉस्टल</h3>
+          <div class="venue-grid">
+            <div class="venue-item"><img src="img/Indravati_Girls_Hostel.jpeg" alt="Indravati Girls Hostel" /><div class="img-label">इंद्रावती गर्ल्स हॉस्टल</div></div>
+          </div>
+        </div>
+
+        <!-- MSH -->
+        <div class="venue-cat" data-anim="fade-up">
+          <h3 class="cat-title">विवाहित छात्र हॉस्टल (MSH)</h3>
+          <div class="venue-grid">
+            <div class="venue-item"><img src="img/MSH_Building.jpg" alt="MSH Building" /><div class="img-label">MSH बाहरी दृश्य</div></div>
+            <div class="venue-item"><img src="img/MSH_corridor.jpg" alt="MSH Corridor" /><div class="img-label">MSH कॉरिडोर</div></div>
+            <div class="venue-item"><img src="img/MSH_Room.jpg" alt="MSH Room" /><div class="img-label">MSH कमरा</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus Map Section -->
+  <section class="map-section" id="campus-map">
+    <div class="container">
+      <div class="section-header" data-anim="fade-up">
+        <span class="section-label">कैंपस गाइड</span>
+        <h2 class="section-title">आईआईटी भिलाई<br /><span class="gradient-text">कैंपस देखें</span></h2>
+        <p class="section-desc">कुटेलाभाटा में हमारे स्थायी परिसर में आसानी से अपना रास्ता खोजें।</p>
+      </div>
+      
+      <div class="map-layout">
+        <div class="map-visual" data-anim="fade-right">
+          <div class="map-container">
+            <img src="img/campus-map.svg" alt="IIT Bhilai Campus Map" class="campus-map-img" />
+          </div>
+        </div>
+        
+        <div class="map-locations" data-anim="fade-left">
+          <h3 class="location-heading">महत्वपूर्ण स्थान</h3>
+          <div class="location-grid">
+            <a href="https://www.google.com/maps?q=21.244055462952144,81.32099040358655" target="_blank" class="loc-btn">
+              <span class="loc-icon">🏠</span>
+              <span class="loc-name">बॉयज हॉस्टल 1</span>
+            </a>
+            <a href="https://www.google.com/maps?q=21.24466626524039,81.32150363087456" target="_blank" class="loc-btn">
+              <span class="loc-icon">🏠</span>
+              <span class="loc-name">बॉयज हॉस्टल 2</span>
+            </a>
+            <a href="https://www.google.com/maps?q=21.243186004894053,81.32101827968017" target="_blank" class="loc-btn">
+              <span class="loc-icon">🏠</span>
+              <span class="loc-name">गर्ल्स हॉस्टल</span>
+            </a>
+            <a href="https://www.google.com/maps?q=21.240412115883576,81.3201563103079" target="_blank" class="loc-btn">
+              <span class="loc-icon">🏢</span>
+              <span class="loc-name">MSH</span>
+            </a>
+            <a href="https://www.google.com/maps?q=21.24361557771522,81.3217241881675" target="_blank" class="loc-btn">
+              <span class="loc-icon">🍽️</span>
+              <span class="loc-name">मेस (भोजनालय)</span>
+            </a>
+            <a href="https://www.google.com/maps?q=21.245854688929334,81.31848190640282" target="_blank" class="loc-btn">
+              <span class="loc-icon">📖</span>
+              <span class="loc-name">लेक्चर हॉल 106</span>
+            </a>
+            <a href="https://www.google.com/maps?q=21.245926093128244,81.31862818905459" target="_blank" class="loc-btn">
+              <span class="loc-icon">🏛️</span>
+              <span class="loc-name">LHC 300</span>
+            </a>
+            <a href="https://www.google.com/maps?q=21.24602397248584,81.31885047505803" target="_blank" class="loc-btn">
+              <span class="loc-icon">🏛️</span>
+              <span class="loc-name">LHC 500</span>
+            </a>
+            <a href="https://www.google.com/maps?q=21.245750992017474,81.31754355565052" target="_blank" class="loc-btn">
+              <span class="loc-icon">⚡</span>
+              <span class="loc-name">ED 1</span>
+            </a>
+            <a href="https://www.google.com/maps?q=21.24332414849715,81.31693983875769" target="_blank" class="loc-btn">
+              <span class="loc-icon">🌿</span>
+              <span class="loc-name">नेचर लैब</span>
+            </a>
+            <a href="https://www.google.com/maps?q=21.2421641739912,81.31323516708908" target="_blank" class="loc-btn">
+              <span class="loc-icon">🏥</span>
+              <span class="loc-name">स्वास्थ्य केंद्र</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sanskrit Shloka 2 -->
+  <section class="shloka-section shloka-alt">
+    <div class="shloka-container">
+      <div class="shloka-card" data-anim="fade-up">
+        <p class="shloka-text">सा विद्या या विमुक्तये।</p>
+        <p class="shloka-meaning">विद्या वही है जो मुक्त करे (मुक्ति दिलाये)।</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sanskrit Shloka 3 -->
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <p class="footer-title">सतत नवाचार कार्यक्रम</p>
+      <p class="footer-sub">आयोजक: मेकाट्रॉनिक्स विभाग, भारतीय प्रौद्योगिकी संस्थान भिलाई</p>
+      <p class="footer-scholarship">कॉर्पोरेट सीएसआर फंड के माध्यम से स्कॉलरशिप उपलब्ध है</p>
+      <p class="footer-contact">प्रश्नों के लिए संपर्क करें: <a href="mailto:niketjaiswal@iitbhilai.ac.in">niketjaiswal@iitbhilai.ac.in</a></p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">© 2026 आईआईटी भिलाई। सर्वाधिकार सुरक्षित।</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
